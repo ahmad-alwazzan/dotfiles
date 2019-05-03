@@ -116,5 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-[[ $TERM != "screen-256color" ]] && (export TERM="screen-256color";exec tmux;)
-alias config='/usr/bin/git --git-dir=/home/ahmad/.cfg/ --work-tree=/home/ahmad'
+#[[ $TERM != "screen-256color" ]] && (export TERM="screen-256color";exec tmux;)
+alias config='/usr/bin/git --git-dir=/$HOME/.cfg/ --work-tree=$HOME'
