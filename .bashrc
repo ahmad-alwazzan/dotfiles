@@ -118,3 +118,9 @@ fi
 
 #[[ $TERM != "screen-256color" ]] && (export TERM="screen-256color";exec tmux;)
 alias config='/usr/bin/git --git-dir=/$HOME/.cfg/ --work-tree=$HOME'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+#make appedning to history immediate
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"

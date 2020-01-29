@@ -15,5 +15,8 @@ ino <left> <Nop>
 ino <right> <Nop>
 ino <up> <Nop>
 "map <C-c> "+y
-map <C-v> "+P
-vnoremap <C-c> "*y :let @+=@*<CR>
+"map <C-v> "+P
+"vnoremap <C-c> "*y :let @+=@*<CR>
+vnoremap <leader>c "zy:silent! call SendZBufferToHomeDotClipboard()<cr>
+map <leader>v :silent! call HomeDotClipboardPut()<cr>
+
